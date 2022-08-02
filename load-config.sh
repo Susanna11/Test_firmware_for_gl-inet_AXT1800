@@ -27,7 +27,7 @@ echo "uci set glfan.@globals[0].differential='20'" >> package/base-files/files/b
 echo "uci commit glfan" >> package/base-files/files/bin/config_generate
 
 # 设定内网默认ip为192.168.8.1
-sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.50.0.11/g' package/base-files/files/bin/config_generate
 
 # 修改主机名
 sed -i 's/OpenWrt/GL-AXT1800/' package/base-files/files/bin/config_generate
